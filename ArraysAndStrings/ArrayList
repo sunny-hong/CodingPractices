@@ -1,0 +1,12 @@
+/*ArrayList (Dynamically Resizing Array)
+An ArrayList, or a dynamically resizing array, is an array that resizes itself as needed while still providing 0(1) access. 
+A typical implementation is that when the array is full, the array doubles in size. Each doubling takes O(n) time, but happens so rarely that itsamor- tized time is still O(1).
+
+~java~ 
+public ArrayList<String> merge(String[] words, String[] more) { 
+  ArrayList<String> sentence = new Arrayl_ist<String>();
+  for (String w : words) sentence.add(w); 
+  for (String w : more) sentence.add(w); 
+  return sentence;
+} 
+*/
