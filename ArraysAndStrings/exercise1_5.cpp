@@ -18,7 +18,6 @@
 
 using namespace std;
 
-
 vector<string> compress_string( string a){
     
     int len = a.length();
@@ -43,29 +42,52 @@ vector<string> compress_string( string a){
     i=0; int j=0;
     
     size_t n = count(changedindices.begin(), changedindices.end(), '1');
-    cout << n<<endl;
-    if (n*2>len ){
+    
+    
+    if ((n+1)*2>len ){
+        cout<<"returns same thing"<<endl;
         return {a};
     }else {
-        
-        // print char, num freq, char, num freq.
-        
-    return {" "};
+        cout<<"returns compressed"<<endl;
+        vector<string> output((n+1)*2);
+        int k=1;
+        while(i<len){ // i= index of the given string; j = index of output vector; k= frequency
+            if (changedindices[i] == true){
+                output[j] = a[i];
+                output[j+1] = to_string(k);
+                j+=2; k=1;
+            }else{
+                
+                if (i == len-1){
+                    k=k;
+                }else{
+                
+                    k=k+1;}
+            }
+            i++;
+            
+        }
+        output[j] = a[i-1];
+        output[j+1] = to_string(k);
+        return output;
     }
+
     
 }
+    
+
 
 
 int main() {
 
     string input;
-    input = "abc";
+    input = "HHEEEEEEEEEEEEEEE";
     vector<string> output;
     output = compress_string(input);
-    //cout<< output[0][0] <<endl;
-//    for (int i=0; i< sizeof(output); )
-//    cout << output[i] << endl;
+    for (int x=0; x<  output.size() ; x++){
+        cout<<output[x];
+    }
     
-    
+    cout<<endl;
     return 0;
 }
