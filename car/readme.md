@@ -3,36 +3,36 @@
 ### Goals:
 
 
--[x] constructors
+- [x] constructors
 
 
--[] struct
+- [ ] struct
 
 
--[] array
+- [ ] array
 
 
--[] singly linked list
+- [ ] singly linked list
 
 
--[] doubly linked list
+- [ ] doubly linked list
 
 
--[] bit manipulation
+- [ ] bit manipulation
 
 
--[] recursion
+- [ ] recursion
 
 
--[] pointers
+- [ ] pointers
 
 
--[] hash map
+- [ ] hash map
 
 ### More goals:
 
--[] graphs
+- [ ] graphs
 
--[] python/API/json parsing
+- [ ] python/API/json parsing
 
--[] trees
+- [ ] trees
