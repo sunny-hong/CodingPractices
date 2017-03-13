@@ -1,4 +1,4 @@
-## This is mainly a C++ file practice
+## This is mainly a pratice file
 
 ### Goals:
 
